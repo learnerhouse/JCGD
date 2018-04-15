@@ -8,7 +8,9 @@ import  VueResource  from 'vue-resource'
 import router from './router/index'
 import Vuex from 'vuex';
 import locale from 'element-ui/lib/locale/lang/en'
-
+import Icon from 'vue-svg-icon/Icon.vue'
+Vue.component('icon', Icon)
+// Icon.inject('logo')
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

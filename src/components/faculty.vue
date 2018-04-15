@@ -294,4 +294,7 @@
         overflow: auto;
     }
 
+    .el-button span{
+        color: black;
+    }
 </style>

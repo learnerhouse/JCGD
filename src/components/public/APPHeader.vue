@@ -9,7 +9,8 @@
             <el-row type="flex" class="row-bg" align="middle" style="height: 80px">
                 <el-col :span="12">
                   <div class="grid-content bg-purple logo_img">
-                    <img src="../../../static/logo.png" height="50px" width="300px"/>
+                  <!--   <icon name="logo" scale="200"></icon> -->
+                    <img src="../../../static/logo.png"/>
                   </div>
                 </el-col>
                 <el-col :span="3">
@@ -47,8 +48,11 @@
 
 
 <script>
+    import Icon from 'vue-svg-icon/Icon.vue'
     export default{
-
+         components: {
+            Icon
+        }
     }
 </script>
 
@@ -66,6 +70,8 @@
     }
     .logo_img img{
         padding-left: 40px;
+        width: 300px;
+        height: 50px;
     }
     .grid-content {
         font-size: 20px;
